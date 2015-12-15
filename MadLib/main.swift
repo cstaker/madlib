@@ -20,18 +20,18 @@ func input() -> String {
 var correctInput = false
 
 while correctInput == false{
-    print("Please type your name hello")
+    print("Please type your name")
     
     var name = input()
 if name == "Cody"{
     correctInput = true
-    print("Hello " + name + " I am your computer you will listen to me! hello this is a change")
+    print("Hello " + name + " I am your computer you will listen to me!")
 
 
 }else{
 
     
-    print("invalid input " + name + " Is not a valid input this is a test")
+    print("invalid input " + name + " Is not a valid input")
   
 
     
