@@ -8,5 +8,37 @@
 
 import Foundation
 
-print("Hello, World!")
+
+
+func input() -> String {
+    var keyboard = NSFileHandle.fileHandleWithStandardInput()
+    var inputData = keyboard.availableData
+    var strData = NSString(data: inputData, encoding: NSUTF8StringEncoding)!
+    
+    return strData.stringByTrimmingCharactersInSet(NSCharacterSet.newlineCharacterSet())
+}
+var correctInput = false
+
+while correctInput == false{
+    print("Please type your name")
+    
+    var name = input()
+if name == "Cody"{
+    correctInput = true
+    print("Hello " + name + " I am your computer you will listen to me!")
+
+
+}else{
+
+    
+    print("invalid input " + name + " Is not a valid input")
+  
+
+    
+
+}
+}
+
+
+
 
