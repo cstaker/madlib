@@ -20,7 +20,7 @@ func input() -> String {
 var correctInput = false
 
 while correctInput == false{
-    print("Please type your name")
+    print("Please type your name hello")
     
     var name = input()
 if name == "Cody"{
